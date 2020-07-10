@@ -193,9 +193,9 @@ console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://gi
     if (CONFIG.lazyload.enable) {
       Action.lazyload();
     }
-    if (CONFIG.donate_alipay || CONFIG.donate_wechat) {
-      Action.donate();
-    }
+    // if (CONFIG.donate_alipay || CONFIG.donate_wechat) {
+    //   Action.donate();
+    // }
     if (CONFIG.galleries.enable) {
       Action.galleries();
     }
