@@ -131,15 +131,15 @@ console.log("%c Github %c", "background:#333333; color:#ffffff", "", "https://gi
       });
     },
     donate: function () {
-      // $(".donate .icon").on("mouseover", function () {
-      //   $(".donate .qrcode").show();
-      // });
-      // $(".donate .icon").children("a").on("mouseover", function () {
-      //   $(".donate .qrcode img").attr('src', eval('CONFIG.donate_' + $(this).attr('id')))
-      // });
-      // $(".donate .icon").on("mouseout", function () {
-      //   $(".donate .qrcode").hide();
-      // });
+      $(".donate .icon").on("mouseover", function () {
+        $(".donate .qrcode").show();
+      });
+      $(".donate .icon").children("a").on("mouseover", function () {
+        $(".donate .qrcode img").attr('src', eval('CONFIG.donate_' + $(this).attr('id')))
+      });
+      $(".donate .icon").on("mouseout", function () {
+        $(".donate .qrcode").hide();
+      });
     },
     motto: function () {
       var text = CONFIG.motto.default;
